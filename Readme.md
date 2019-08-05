@@ -31,6 +31,10 @@ npm run webpush
 
 - You will see the list of frameworks, please make the proper choice!
 
+- Let take a look with some environment variables:
+  - apiUrl: we need an apiUrl for send `POST` request each time init push-notifications successful in order to register device.
+  - serverKey: with the same keys in both side, it let our frontend project and server contact each others.
+
 ### Vuejs
 
 - When you choose `vuejs`, You will see the `wp-worker.js` created in public folder. Vuejs auto copy all files in public folder to their build folder.
