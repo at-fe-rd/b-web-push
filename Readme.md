@@ -11,6 +11,8 @@
 
 - A project created from the list: [Angular, Vue, pure JS]
 
+  - Init project (click) [Vuejs](https://cli.vuejs.org/guide/creating-a-project.html#vue-create), [Angular](https://angular.io/cli)
+
 - Run: 
 ```bash
 npm install web-push-js
