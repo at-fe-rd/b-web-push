@@ -63,6 +63,7 @@ webPush.requestNotiPermission();
 ```
 
 ### Pure Js
+comming soon
 
 
 
