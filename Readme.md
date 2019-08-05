@@ -33,9 +33,8 @@ npm run webpush
 
 ### Vuejs
 
-when you choose `vuejs`.
-
-You need to setup some environment for it in `main.js`
+- When you choose `vuejs`, You will see the `wp-worker.js` created in public folder. Vuejs auto copy all files in public folder to their build folder.
+- Thus, you just need to setup some environment for it in `main.js`
 
 ```bash
 import webPush from 'web-push-js'
@@ -48,9 +47,11 @@ webPush.requestNotiPermission();
 
 ### Angular
 
-when you choose `angular`.
+when you choose `angular`, You will see the `wp-worker.js` created in `src` folder.
 
-You need to setup some environment for it in `main.js`
+- add: `src/wp-worker.js` in `assets` of `angular.json`.
+
+You need to setup some environment for it in `main.ts` like Vue:
 
 ```bash
 import webPush from 'web-push-js'

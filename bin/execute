@@ -36,14 +36,14 @@ const PROJECT_INIT_STEPS = [
         name: '2. Vue',
         value: 2
       },
-      {
-        name: '3. Reactjs',
-        value: 3
-      },
-      {
-        name: '4. Pure JS',
-        value: 4
-      }
+      // {
+      //   name: '3. Reactjs',
+      //   value: 3
+      // },
+      // {
+      //   name: '4. Pure JS',
+      //   value: 4
+      // }
     ],
     validate: function (input) {
       if (input) {
@@ -59,7 +59,13 @@ const run = async () => {
   await inquirer.prompt(PROJECT_INIT_STEPS).then(async(answers) => {
     const framework = answers['framework'];
     if( framework === 1 ) {
-    
+      const angularSWPath = `${projectDir}/src/`;
+      console.log(`Read ${serviceWorker}!`);
+      contents = fs.readFileSync(`${pathToSW}`, 'utf8');
+      console.log(`Write ${serviceWorker} in src folder of Angular!`);
+      // // create a new file with contents
+      fs.writeFileSync(`${angularSWPath}${serviceWorker}`, contents, 'utf8');
+
     } else if (framework === 2) {
       const vueSWPath = `${projectDir}/public/`;
       console.log(`Read ${serviceWorker}!`);
